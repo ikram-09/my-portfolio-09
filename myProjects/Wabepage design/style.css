@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(./hd-wallpaper-g6ffe21848_1920.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+/* -------------header------------------ */
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200xp;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+.menu{
+    width: 400px;
+    height: 70px;
+    float: left;
+}
+.menu ul{
+    float: left;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+.menu ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 20px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: all .45s ease-in-out;
+}
+.menu ul li a:hover{
+    color: #ff7200;
+}
+.search-bar{
+    width: 330px;
+    float: left;
+    margin-left: 320px;
+}
+.srch{
+    font-family: 'Tme New Roman';
+    width: 225px;
+    height: 40px;
+    float: left;
+    margin: 13px;
+    margin-left: 20px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    border-right: none;
+    font-size: 16px;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    
+}
+.btn{
+    background: #ff7200;
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+    font-family: Arial;
+    float: left;
+    margin-top: 13px;
+    border: none;
+    margin-left: -13px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/* ---------------about-me-------------- */
+.about{
+   display: flex;
+   margin-top: 80px;
+}
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px; 
+}
+.about-me h1{
+   font-size: 60px;
+   color: #fff;
+   font-family: 'Tme New Roman';
+   letter-spacing: 3px;
+}
+.about-me h1 span{  
+   color: #ff7200; 
+   margin: 10px;   
+}
+.about-me p{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.about-me a button{
+    background: #ff7200;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    transition: all .45s ease;
+}
+.about-me a button:hover{
+    background: #fff;
+    color: #ff7200;
+    transform: translateX(5px);
+}
+/* -------------------------form----------------- */
+.form{
+    height: 430px;
+    width: 300px;
+    background: #000;
+    margin-left: 22%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.header h1{
+    color: #ff7200;
+    background: #fff;
+    width: 250px;
+    height: 40px;
+    margin: 25px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: Arial;
+}
+.form input{
+    width: 250px;
+    background: transparent;
+    font-size: 15px;
+    border: none;
+    margin: 15px;
+    border-bottom: 1px solid #ff7200;
+    padding-bottom: 10px;
+    outline: none;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.form-btn{
+    color: #000;
+    background: #ff7200;
+    width: 250px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: Arial;
+    border: none;
+    transition: all .45s ease;
+}
+.form-btn:hover{
+    color: #ff7200;
+    background: #fff;
+}
+.form p{
+    color: #fff;
+    font-size: 20px;
+    font-family: serif;
+    text-align: center;
+    width: 200px;   
+    margin: 5px;
+}
+.form p span{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.form p a{
+    text-decoration: none;
+    color: #ff7200;
+}
+.icons a ion-icon{
+    color: #fff;
+    margin: 10px;
+    font-size: 30px;
+    transition: all .45s ease;
+}
+.icons a ion-icon:hover{
+    color: #ff7200;
+}
+@media (max-width: 1950){
+    .navbar{
+        padding: 10px 50px;
+    }
+}
+
+

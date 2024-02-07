@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Village</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- ----------font weight--------- -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- ---------------icons-------------- -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="data:image/png;base64,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" alt="">
+        <div class="nav-bar">
+        <nav> 
+            <ul>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Sell Your NFT</a></li>
+                <li><a href="#">Conlections</a></li>
+                <li><a class="active" href="#">Marketplace</a></li>
+            </ul>
+        </nav>
+        <a id="btn-0" class="wallet-btn" href="#">Connect Wallet</a>
+    </div>
+    <ion-icon class="menu" name="menu-outline"></ion-icon>
+    </header>
+    <!-- ---------------------main---------------------- -->
+    <section class="main">
+        <div class="hero">
+            <div class="jss-20">
+             <h1 class="active">ZERO</h1>
+             <h1>CREATOR</h1>
+            </div>
+            <div class="jss-30">
+            <h1>FEES</h1>
+             <P>Resell your NFTs on our platform & save 100% creator fee.</P>
+            </div>
+                <a id="btn" class="wallet-btn" href="#">Sell Your NFTs</a>
+        </div>
+        <div class="boxs">
+        <div class="hero-2">
+            <div class="nft-box">
+                <img class="nft-img-1" src="https://main.d1piy9naotb9ig.amplifyapp.com/static/media/beardedMonkey.01b019840ee89427db44.png" alt="">
+                <h3>BEARDED DUDE</h3>
+                <p>nirvana <ion-icon name="checkmark-circle"></ion-icon> </p>
+            </div>
+            <div class="nft-box">
+                <img class="nft-img-2" src="https://main.d1piy9naotb9ig.amplifyapp.com/static/media/women.f6c0bdc87791cf7886be.png" alt="">
+                <h3>ALDY IN BLACK</h3>
+                <p>Official Nobody <ion-icon name="checkmark-circle"></ion-icon> </p>
+            </div>
+        </div>
+        <div class="hero-2">
+            <div class="nft-box">
+                <img class="nft-img-2" src="https://main.d1piy9naotb9ig.amplifyapp.com/static/media/cloud.c3794367beb5e6e9c505.png" alt="">
+                <h3>FLOATING LIKE SILK</h3>
+                <p>Official Nobody <ion-icon name="checkmark-circle"></ion-icon> </p>
+            </div>
+            <div class="nft-box">
+                <img class="nft-img-1" src="https://main.d1piy9naotb9ig.amplifyapp.com/static/media/bandar.df76ff4680a84722029b.png" alt="">
+                <h3>COOL APE</h3>
+                <p>nirvana <ion-icon name="checkmark-circle"></ion-icon> </p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+     <div class="jss-40">
+        <marquee class="marquee" behavior="scroll" direction="left">NO CREATOR FEES X NO CREATOR FEES X NO CREATOR FEES X NO CREATOR FEES X NO CREATOR FEES X</marquee>
+     </div>
+     <!-- -----------------------collection---------------/ -->
+     <section class="collection">
+        <div class="col">
+        <h1>Top Collections</h1>
+        <div class="wraper">
+        <div id="wraped" class="wrap">
+            <div class="bear">
+                <h6>1</h6>
+                <img src="https://images.unsplash.com/source-404?fit=crop&fm=jpg&h=800&q=60&w=1200" alt="#">
+                <p>The Bear Market</p>
+            </div>
+            <div class="items">
+                <div class="cell">
+                    <p class="first-1">	144.87</p>
+                    <p class="second-2">Vol.</p>
+                </div>
+                <div class="cell">
+                    <p class="first-1">3.37k</p>
+                    <p class="second-2">Sales</p>
+                </div>
+                <div class="cell">
+                    <p class="first-1">3.23</p>
+                    <p class="second-2">Ava.bal.</p>
+                </div>
+                <div class="cell">
+                    <p class="first-1">4.2k</p>
+                    <p class="second-2">Owner</p>
+                </div>
+                <div class="cell">
+                    <p class="first-1">7.9k</p>
+                    <p class="second-2">Items</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="bear">
+                <h6>2</h6>
+                <img src="https://images.unsplash.com/source-404?fit=crop&fm=jpg&h=800&q=60&w=1200" alt="#">
+                <p>The Bear Market</p>
+            </div>
+            <div class="items">
+                <div class="cell">
+                    <p class="first-1">	144.87</p>
+                    <p class="second-2">Vol.</p>
+                </div>
+                <div class="cell">
+                    <p class="first-1">3.37k</p>
+                    <p class="second-2">Sales</p>
+                </div>
+                <div class="cell">
+                    <p class="first-1">3.23</p>
+                    <p class="second-2">Ava.bal.</p>
+                </div>
+                <div class="cell">
+                    <p class="first-1">4.2k</p>
+                    <p class="second-2">Owner</p>
+                </div>
+                <div class="cell">
+                    <p class="first-1">7.9k</p>
+                    <p class="second-2">Items</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="bear">
+                <h6>3</h6>
+                <img src="https://images.unsplash.com/source-404?fit=crop&fm=jpg&h=800&q=60&w=1200" alt="#">
+                <p>The Bear Market</p>
+            </div>
+            <div class="items">
+                <div class="cell">
+                    <p class="first-1">	144.87</p>
+                    <p class="second-2">Vol.</p>
+                </div>
+                <div class="cell">
+                    <p class="first-1">3.37k</p>
+                    <p class="second-2">Sales</p>
+                </div>
+                <div class="cell">
+                    <p class="first-1">3.23</p>
+                    <p class="second-2">Ava.bal.</p>
+                </div>
+                <div class="cell">
+                    <p class="first-1">4.2k</p>
+                    <p class="second-2">Owner</p>
+                </div>
+                <div class="cell">
+                    <p class="first-1">7.9k</p>
+                    <p class="second-2">Items</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="bear">
+                <h6>4</h6>
+                <img src="https://images.unsplash.com/source-404?fit=crop&fm=jpg&h=800&q=60&w=1200" alt="#">
+                <p>The Bear Market</p>
+            </div>
+            <div class="items">
+                <div class="cell">
+                    <p class="first-1">	144.87</p>
+                    <p class="second-2">Vol.</p>
+                </div>
+                <div class="cell">
+                    <p class="first-1">3.37k</p>
+                    <p class="second-2">Sales</p>
+                </div>
+                <div class="cell">
+                    <p class="first-1">3.23</p>
+                    <p class="second-2">Ava.bal.</p>
+                </div>
+                <div class="cell">
+                    <p class="first-1">4.2k</p>
+                    <p class="second-2">Owner</p>
+                </div>
+                <div class="cell">
+                    <p class="first-1">7.9k</p>
+                    <p class="second-2">Items</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <a id="btn" class="wallet-btn" href="#">View All</a>
+    </div>
+     </section>
+
+
+     <div class="jss-40">
+        <marquee class="marquee" behavior="scroll" direction="left">NO CREATOR FEES X NO CREATOR FEES X NO CREATOR FEES X NO CREATOR FEES X NO CREATOR FEES X</marquee>
+     </div>
+
+   <!-- ------------------works----------------- -->
+     <section class="works">
+        <div class="nft-works">
+            <h1>How <span> NFT Village </span> Works?</h1>
+
+            <div class="jss50">
+                <div class="jss55">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF8AAABfCAYAAACOTBv1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALqSURBVHgB7dxBbtNAGIbhf8ZxVFQkfIT0BKRLBK2SG3RBBTvCCRpOQHODcoKGHWorNTdIKEJsww1yhLAICtjjYeyKAGnr2GKiZvE+0iiRNd78ssZjz+cRAQAAAAAA+C9q+UA0PIh+BkFLiY6MspP53sVIsBaL4m8NXzaCmjl1f1tLPSbWqv73vbOewKu8+NvDw6bUZOj+RgV9x2ESt6ftwVTghc6ueBvKpRQXPtOMw/pbgTc6CJIDZaVRqre13eyeIOVYWmET7QaeV1LBj6DWEXih3bDfrHSCVo8FXmipyqTfBF5kxR9VOUGUHgu8qNnUflRatcqeYEw8KtlVCQrpepqcWCuTMp2V2N68PSjVF6vlV2c219eBGSpVMOW09v1s/6Ij8Ca/4c7bHyapCdpZgd0MdOkJ1o7dsdcU3r9bx+WHn563st+klkzmTxhmAAAAAAAAAAC4Z7cGZWf1sBGkNjJaTeOn5yyYr8mi+Hk6uVY/cuu0Xfk7Oqjc+m4qvdn+eV/g1Z813NCt4RbFBpU6mT07eyPwJl/DXVn4jLXdB1cvugJv1PbVYcdd/6cl+0/DJN4pGRO3giJKi7JHFU6ICMr6Q1D2HlUPysIbXTYq+Fua2q8CL3SeUqvAmmRQsquiFbaqQdn0HUFZf66/Rvx82HRPsUMp/CjOjmZ7F22BN/kNd+be35gk2L11CLIyzaLhFN6/Gy/WslcNYRA3U9GRUnZSS5Ix394CAAAAAAAAALB5stzm1peDhmCtbgRl3WpWZ2nfnZHJNjliW1/vFkHZIDSXbsnwzgCVFXXMlr5+LYKyRYXPuHXcY4Kyfq0zKIsVqu4oWyUou8lb6W5Cy4edllSgrW0IvKgelA30I4EXBGXv0TqDslghD8q633KzFyX9CkHZTU4Ib0ITnU8braz+ytANTyaOewJvroOy++d9kwQ7d43/WTQ8NPEu8XC/bgRls91kjXvaVVYipdTEFX3AQxUAAAAAAADwr18B/ao0PGdu8gAAAABJRU5ErkJggg==" alt="">
+                    <h2>List</h2>
+                    <p>List your NFTs in the collections</p>
+                </div>
+                <div class="jss55">
+                    <img src="data:image/png;base64,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" alt="">
+                    <h2>Show Off</h2>
+                    <p>Show off your collections to your friends and community.</p>
+                </div>
+                <div class="jss55">
+                    <img src="data:image/png;base64,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" alt="">
+                    <h2>Earn</h2>
+                    <p>Resell your NFTs without any creator's with the earn unlimited.</p>
+                </div>
+            </div>
+     </section>
+
+        <!-- --------------------------footer------------------- -->
+     <footer class="end">
+         <div class="jss60">
+            <div class="jss65">
+          <img class="logo" src="data:image/png;base64,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" alt="">
+        </div>
+        <div class="jss-70">
+            <ul>
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">Sell your NFTs</a></li>
+                <li><a href="#">Marketplace</a></li>
+            </ul>
+        </div>
+        <div class="jss-75">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-youtube"></ion-icon>
+        </div>
+    </div>
+    <p class="jss-80">© 2022 NFT Village. All Rights Reserved.</p>
+     </footer>
+</body>
+</html>

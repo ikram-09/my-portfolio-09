@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Menu with sub-menu</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="slide-bar">
+        <div class="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="menu">
+            <div class="item"><a href="#"><i class="fas fa-desktop"></i>Dashboard</a></div>
+            <div class="item">
+                <a class="sub-btn"><i class="fas fa-table"></i>Table<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">Sub-Menu 1</a>
+                    <a href="#" class="sub-item">Sub-Menu 2</a>
+                    <a href="#" class="sub-item">Sub-Menu 3</a>
+                </div>
+            </div>
+            <div class="item"><a href="#"><i class="fas fa-th"></i>Forms</a></div>
+            <div class="item">
+                <a class="sub-btn"><i class="fas fa-cogs"></i>Setting<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">Sub-Menu 1</a>
+                    <a href="#" class="sub-item">Sub-Menu 2</a> 
+                </div>
+            </div>
+            <div class="item"><a href="#"><i class="fas fa-info-circle"></i>About</a></div>
+        </div>
+    </div>
+    <section class="main">
+       <h1>Slider Menu With <br> Sub-menus</h1>
+    </section>
+    <script type="text/javascript">
+		$(document).ready(function() {
+            //jquery for toggle sub menus
+			$('.sub-btn').click(function() {
+				$(this).next('.sub-menu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+			});
+            //jquery for expand and collapse the slider
+            $('.menu-btn').click(function(){
+                $('.slide-bar').addClass('active');
+                $('.menu-btn').css("visibilty", "visible");
+            });
+            $('.close-btn').click(function(){
+                $('.slide-bar').removeClass('active');
+                $('.menu-btn').css("visibilty", "visible");
+            });
+		});
+	</script>   
+
+</body>
+</html>
