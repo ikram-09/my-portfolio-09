@@ -78,6 +78,8 @@ span {
     cursor: pointer;
     margin-left: 25px;
     display: none;
+    outline: none;
+    border: none;
 }
 #close-menu-btn {
     font-size: 35px;
@@ -85,6 +87,8 @@ span {
     cursor: pointer;
     margin-left: 25px;
     display: none;
+    outline: none;
+    border: none;
 }
 
 /* <!-- --------home section desgin------------ --> */
@@ -590,13 +594,11 @@ form textarea {
     }
 
     @media only screen and (min-width: 806px) {
-        .nav-list{display: none;}  
     }
-    @media only screen and (min-width: 600px) {
-        .nav-list{
-            display: -webkit-inline-box !important  ;
-        }
-      }
+    .nav-list{
+        display: none;
+    }  
+   
     
     #close-menu-btn {
         display: none;
@@ -608,17 +610,17 @@ form textarea {
         font-size: 25px;
     }
     
-    .nav-list {
+    /* .nav-list {
         position: absolute;
         right: 0;
         top: 100%;
         left: 0;
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         background: var(--bg-color);
         text-align: left;
         transition: all .45s ease;
-    }
+    } */
 
     .nav-list a {
         display: block;
